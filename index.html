@@ -173,7 +173,8 @@
   var getFireballSpeed =  windboost(left);
   var wizardSpeed = 3;
   var wizardWidth = 70;
-  var getWizardHeight = calcWizardheight(wizardWidth);
+  var getWizardHeight = calcWizardheight(width);
+
 
   function windboost(left) {
     if (left===true) {
@@ -183,19 +184,20 @@
       getFireballSpeed=2;
     }
   }
-
-    function calcWizardheight (wizardWidth) {
-      var wizardheight = wizardWidth * 1.337;
+    
+    function calcWizardheight(width) {
+      var width = prompt('Enter width','');
+      var wizardheight = width * 1.337;
       return wizardheight;
   }
 
-    function getWizardX(width) {
-      var wizardPositionX = width / 2.2;
+    function getWizardX(horisontal) {
+      var wizardPositionX = horisontal / 2.2;
       return wizardPositionX;
 }
 
-    function getWizardY(height) {
-      var wizardPositionY = height / 66.6;
+    function getWizardY(vertical) {
+      var wizardPositionY = vertical / 66.6;
       return wizardPositionY;
     }
 </script>
