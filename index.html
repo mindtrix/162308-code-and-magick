@@ -173,7 +173,7 @@
   var getFireballSpeed =  windboost(left);
   var wizardSpeed = 3;
   var wizardWidth = 70;
-  var getWizardHeight = calcWizardheight(width);
+  var getWizardHeight = wizardHeight(width);
 
 
   function windboost(left) {
@@ -185,7 +185,7 @@
     }
   }
     
-    function calcWizardheight(width) {
+    function wizardHeight(width) {
       var width = prompt('Enter width','');
       var wizardheight = width * 1.337;
       return wizardheight;
