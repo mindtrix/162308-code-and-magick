@@ -177,19 +177,18 @@
   var wizardWidth = 70;
   var getWizardHeight = calcWizardheight;
 
-    function calcWizardheight (wizardWidth) {
-      var wizardheight = wizardWidth * 1.337;
-      return wizardheight;
+  function calcWizardheight(wizardWidth) {
+    var wizardheight = wizardWidth * 1.337;
+    return wizardheight;
   }
-    function getWizardX(width) {
-      var wizardPositionX =  width / 2 - wizardWidth / 2;
-      return wizardPositionX;
-}
-    function getWizardY(height) {
-      var wizardPositionY = height * (1/3);
-      return wizardPositionY;
-    }
-    
+  function getWizardX(width) {
+    var wizardPositionX = width / 2 - wizardWidth / 2;
+    return wizardPositionX;
+  }
+  function getWizardY(height) {
+    var wizardPositionY = height * (1/3);
+    return wizardPositionY;
+  }
 </script>
 <script src="js/game.js"></script>
 </body>
