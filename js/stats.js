@@ -3,7 +3,7 @@
 window.renderStatistics = function(ctx, names, times) {
 	
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
-	ctx.fillRect(110,20,420,270);
+	ctx.fillRect(110,20,420,270);//Сделать функцию с пармаетрами цвета и корордлинаты
 	ctx.fillStyle = 'white';
 	ctx.fillRect(100,10,420,270);
 	ctx.fillStyle = '#000';
@@ -16,11 +16,11 @@ window.renderStatistics = function(ctx, names, times) {
 	var indexMax = 0;
 	for (var i = 0; i <= times.length; ++i) { //Находим все эл-ты массива.
 		var time = times[i];//
-		if(time > max) { //Ищем наибольшее значение в times[]; //Почему не работает if(times[i] > max){}?
-			max = time; //Передаем значение в var max;
+		if(times[i] > max) { //Ищем наибольшее значение в times[]; //Почему не работает if(times[i] > max){}?
+			max = times[i]; //Передаем значение в var max;
 		}
 		};
-	};
+
 
 	var histagramHeight = 120;
 	var histogramDinHeight = histagramHeight / max; 
@@ -39,9 +39,10 @@ window.renderStatistics = function(ctx, names, times) {
 
 	}
 		 
+};
 
 
-	}; 
+
 
 
 
