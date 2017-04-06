@@ -1,5 +1,4 @@
-'use strict';
-
+'use strickt';
 window.renderStatistics = function (ctx, names, times) {
   function cloud(color, indent) {
     ctx.fillStyle = color;
@@ -26,14 +25,13 @@ window.renderStatistics = function (ctx, names, times) {
   var histagramWidth = 40;
   var histagramIndent = 90;
   var myColor = 'rgba(255, 0, 0, 1)';
-  var randomAlfCh = function() {
-  	return Math.random();
+  var playersColor = function() {
+  	return'rgba(0, 0, 255,' + Math.random() + ')';
   }
-  var playersColor = 'rgba('0, 0, 255,' + randomAlfCh() )';
-  for (var k = 0; k < times.length; k++) {
+  for (var i = 0; i < times.length; i++) {
     var dinColor = function () {
-      if (names[k] !== 'Вы') {
-        ctx.fillStyle = playersColor;
+      if (names[i] !== 'Вы') {
+        ctx.fillStyle = playersColor();
       } else {
         ctx.fillStyle = myColor;
       }
@@ -45,5 +43,3 @@ window.renderStatistics = function (ctx, names, times) {
     ctx.fillRect(150 + histagramIndent * i, 240, histagramWidth, histogramDinHeight * -times[i]);
   }
 };
-
-
