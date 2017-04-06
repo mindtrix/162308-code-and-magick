@@ -1,9 +1,9 @@
 'use strickt';
 window.renderStatistics = function (ctx, names, times) {
   function cloud(color, indent) {
-      ctx.fillStyle = color;
-      ctx.fillRect(100 + indent, 10 + indent, 420, 270);
-    }
+    ctx.fillStyle = color;
+    ctx.fillRect(100 + indent, 10 + indent, 420, 270);
+  }
   cloud('rgba(0, 0, 0, 0.7)', 10);
   cloud('white', 0);
   ctx.fillStyle = '#000';
@@ -15,14 +15,13 @@ window.renderStatistics = function (ctx, names, times) {
   textInCloud('Ура, вы победили!', 140, 0);
   textInCloud('Список результатов: ', 140, 20);
   var max = 0;
-  for (var i = 0; i <= times.length; ++i) { 
-    var time = times[i];
-    if(times[i] > max) { 
-      max = times[i]; 
+  for (var i = 0; i <= times.length; ++i) {
+    if (times[i] > max) {
+      max = times[i];
     }
   }
   var histagramHeight = 120;
-  var histogramDinHeight = histagramHeight / max; 
+  var histogramDinHeight = histagramHeight / max;
   var histagramWidth = 40;
   var histagramIndent = 90;
   var myColor = 'rgba(255, 0, 0, 1)'; 
