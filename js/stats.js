@@ -1,7 +1,7 @@
 'use strickt';
 
-window.renderStatistics = function(ctx, names, times) {
-	function cloud(color, indent) { 
+window.renderStatistics = function (ctx, names, times) {
+	function cloud (color, indent) { 
 		ctx.fillStyle = color;
 		ctx.fillRect(100 + indent, 10 + indent, 420, 270);
 	}
@@ -11,7 +11,7 @@ window.renderStatistics = function(ctx, names, times) {
 	ctx.fillStyle = '#000';
 	ctx.font='16px PT Mono';
 
-	function textInCloud(text, indentX, indentY) {
+	function textInCloud (text, indentX, indentY) {
 		ctx.fillText(text, indentX, 40 + indentY);
 		ctx.fillText(text, indentX, 40 + indentY);
 	}
