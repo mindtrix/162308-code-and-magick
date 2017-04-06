@@ -1,7 +1,7 @@
 'use strickt';
-  window.renderStatistics = function (ctx, names, times) {
+window.renderStatistics = function (ctx, names, times) {
     function cloud(color, indent) { 
-		  ctx.fillStyle = color;
+      ctx.fillStyle = color;
       ctx.fillRect(100 + indent, 10 + indent, 420, 270);
     }
   cloud('rgba(0, 0, 0, 0.7)', 10);
@@ -21,31 +21,26 @@
       max = times[i]; 
     }
   }
-	var histagramHeight = 120;
-  var histogramDinHeight = histagramHeight / max; 
-  var histagramWidth = 40;
-  var histagramIndent = 90;
-  var myColor = 'rgba(255, 0, 0, 1)'; 
-  var playersColor = 'rgba(0, 0, 255, Math.random())';
+  	var histagramHeight = 120;
+    var histogramDinHeight = histagramHeight / max; 
+    var histagramWidth = 40;
+    var histagramIndent = 90;
+    var myColor = 'rgba(255, 0, 0, 1)'; 
+    var playersColor = 'rgba(0, 0, 255, Math.random())';
   for (var i = 0; i < times.length; i++) {
     var dinColor = function () {
-      if(names[i]!='Вы')  {
+      if(names[i] !== 'Вы') {
         ctx.fillStyle = playersColor;
-      }
-      else {
+      } else {
         ctx.fillStyle = myColor;
       }
     };
     ctx.fillStyle = '#000';
     ctx.fillText(names[i], 150 + histagramIndent * i, 260);
-    ctx.fillText(times[i].toFixed(0), 150 + histagramIndent * i,240 - histogramDinHeight * times[i] - 20); 
+    ctx.fillText(times[i].toFixed(0), 150 + histagramIndent * i, 240 - histogramDinHeight * times[i] - 20);
     ctx.fillStyle = dinColor();
     ctx.fillRect(150 + histagramIndent * i, 240, histagramWidth, histogramDinHeight * -times[i]);
   }
-};
-
-
-
-
+  };
 
 
