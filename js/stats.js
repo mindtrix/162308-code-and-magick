@@ -1,4 +1,4 @@
-'use strickt';
+'use strict';
 
 window.renderStatistics = function (ctx, names, times) {
   function cloud(color, indent) {
@@ -26,7 +26,10 @@ window.renderStatistics = function (ctx, names, times) {
   var histagramWidth = 40;
   var histagramIndent = 90;
   var myColor = 'rgba(255, 0, 0, 1)';
-  var playersColor = 'rgba(0, 0, 255, Math.random())';
+  var randomAlfCh = function() {
+  	return Math.random();
+  }
+  var playersColor = 'rgba('0, 0, 255,' + randomAlfCh() )';
   for (var k = 0; k < times.length; k++) {
     var dinColor = function () {
       if (names[k] !== 'Вы') {
