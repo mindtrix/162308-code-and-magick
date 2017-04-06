@@ -1,6 +1,6 @@
 'use strickt';
 window.renderStatistics = function (ctx, names, times) {
-    function cloud(color, indent) { 
+  function cloud(color, indent) {
       ctx.fillStyle = color;
       ctx.fillRect(100 + indent, 10 + indent, 420, 270);
     }
@@ -21,15 +21,15 @@ window.renderStatistics = function (ctx, names, times) {
       max = times[i]; 
     }
   }
-  	var histagramHeight = 120;
-    var histogramDinHeight = histagramHeight / max; 
-    var histagramWidth = 40;
-    var histagramIndent = 90;
-    var myColor = 'rgba(255, 0, 0, 1)'; 
-    var playersColor = 'rgba(0, 0, 255, Math.random())';
+  var histagramHeight = 120;
+  var histogramDinHeight = histagramHeight / max; 
+  var histagramWidth = 40;
+  var histagramIndent = 90;
+  var myColor = 'rgba(255, 0, 0, 1)'; 
+  var playersColor = 'rgba(0, 0, 255, Math.random())';
   for (var i = 0; i < times.length; i++) {
     var dinColor = function () {
-      if(names[i] !== 'Вы') {
+      if (names[i] !== 'Вы') {
         ctx.fillStyle = playersColor;
       } else {
         ctx.fillStyle = myColor;
@@ -41,6 +41,6 @@ window.renderStatistics = function (ctx, names, times) {
     ctx.fillStyle = dinColor();
     ctx.fillRect(150 + histagramIndent * i, 240, histagramWidth, histogramDinHeight * -times[i]);
   }
-  };
+};
 
 
