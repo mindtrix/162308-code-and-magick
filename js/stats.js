@@ -1,4 +1,4 @@
-var strickt = function {
+var strickt = function() {
 	'use strickt';
 }
 window.renderStatistics = function (ctx, names, times) {
