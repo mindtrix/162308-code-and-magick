@@ -1,4 +1,6 @@
-'use strickt';
+var strickt = function {
+	'use strickt';
+}
 window.renderStatistics = function (ctx, names, times) {
   function cloud(color, indent) {
     ctx.fillStyle = color;
@@ -26,9 +28,9 @@ window.renderStatistics = function (ctx, names, times) {
   var histagramIndent = 90;
   var myColor = 'rgba(255, 0, 0, 1)';
   var playersColor = 'rgba(0, 0, 255, Math.random())';
-  for (var i = 0; i < times.length; i++) {
+  for (var k = 0; k < times.length; k++) {
     var dinColor = function () {
-      if (names[i] !== 'Вы') {
+      if (names[k] !== 'Вы') {
         ctx.fillStyle = playersColor;
       } else {
         ctx.fillStyle = myColor;
