@@ -1,6 +1,5 @@
-var strickt = function() {
-	'use strickt';
-}
+'use strickt';
+
 window.renderStatistics = function (ctx, names, times) {
   function cloud(color, indent) {
     ctx.fillStyle = color;
