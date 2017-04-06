@@ -25,9 +25,9 @@ window.renderStatistics = function (ctx, names, times) {
   var histagramWidth = 40;
   var histagramIndent = 90;
   var myColor = 'rgba(255, 0, 0, 1)';
-  var playersColor = function() {
-  	return'rgba(0, 0, 255,' + Math.random() + ')';
-  }
+  var playersColor = function () {
+    return 'rgba(0, 0, 255,' + Math.random() + ')';
+  };
   for (var i = 0; i < times.length; i++) {
     var dinColor = function () {
       if (names[i] !== 'Вы') {
