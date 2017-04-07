@@ -29,12 +29,12 @@ window.renderStatistics = function (ctx, names, times) {
 		};
 		for (var i = 0; i < times.length; i++) {
 			var dinColor = function () {
-					if (names[i] !== 'Вы') {
-						ctx.fillStyle = playersColor();
-					} else {
-						ctx.fillStyle = myColor;
-					}
-				};
+				if (names[i] !== 'Вы') {
+					ctx.fillStyle = playersColor();
+				} else {
+					ctx.fillStyle = myColor;
+				}
+			};
 			ctx.fillStyle = '#000';
 			ctx.fillText(names[i], 150 + histagramIndent * i, 260);
 			ctx.fillText(times[i].toFixed(0), 150 + histagramIndent * i, 240 - histogramDinHeight * times[i] - 20);
