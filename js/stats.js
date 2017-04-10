@@ -10,7 +10,7 @@ window.renderStatistics = function (ctx, names, times) {
     ctx.fillText(text, indentX, 40 + indentY);
   }
   function drowStatsHistograms() {
-    function maxTime() { 
+    function maxTime() {
       var max = 0;
       for (var i = 0; i <= times.length; ++i) {
         if (times[i] > max) {
