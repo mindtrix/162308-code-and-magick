@@ -12,35 +12,35 @@ var random = function (min, max) {
   return Math.round(Math.random() * (max - min)) + min;
 };
 var wizardOne = {
-  name: WIZARD_NAMES[random (0, WIZARD_NAMES.length-1)],
-  secondname: WIZARD_SEC_NAMES[random (0, WIZARD_SEC_NAMES.length-1)],
-  coatColor: COAT_COLORS[random (0, COAT_COLORS.length-1)],
-  eyesColor: EYES_COLORS[random (0, EYES_COLORS.length-1-1)],
+  name: WIZARD_NAMES[random(0, WIZARD_NAMES.length - 1)],
+  secondname: WIZARD_SEC_NAMES[random(0, WIZARD_SEC_NAMES.length - 1)],
+  coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
+  eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
 }
 var wizardTwo = {
-  name: WIZARD_NAMES[random (0, WIZARD_NAMES.length-1)],
-  secondname: WIZARD_SEC_NAMES[random (0, WIZARD_SEC_NAMES.length-1)],
-  coatColor: COAT_COLORS[random (0, COAT_COLORS.length-1)],
-  eyesColor: EYES_COLORS[random (0, EYES_COLORS.length-1-1)],
+  name: WIZARD_NAMES[random(0, WIZARD_NAMES.length - 1)],
+  secondname: WIZARD_SEC_NAMES[random(0, WIZARD_SEC_NAMES.length - 1)],
+  coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
+  eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
 }
 var wizardThree = {
-  name: WIZARD_NAMES[random (0, WIZARD_NAMES.length-1)],
-  secondname: WIZARD_SEC_NAMES[random (0, WIZARD_SEC_NAMES.length-1)],
-  coatColor: COAT_COLORS[random (0, COAT_COLORS.length-1)],
-  eyesColor: EYES_COLORS[random (0, EYES_COLORS.length-1-1)],
+  name: WIZARD_NAMES[random(0, WIZARD_NAMES.length - 1)],
+  secondname: WIZARD_SEC_NAMES[random(0, WIZARD_SEC_NAMES.length - 1)],
+  coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
+  eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
 }
 var wizardFour = {
-  name: WIZARD_NAMES[random (0, WIZARD_NAMES.length-1)],
-  secondname: WIZARD_SEC_NAMES[random (0, WIZARD_SEC_NAMES.length-1)],
-  coatColor: COAT_COLORS[random (0, COAT_COLORS.length-1)],
-  eyesColor: EYES_COLORS[random (0, EYES_COLORS.length-1-1)],
+  name: WIZARD_NAMES[random(0, WIZARD_NAMES.length-1)],
+  secondname: WIZARD_SEC_NAMES[random (0, WIZARD_SEC_NAMES.length - 1)],
+  coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
+  eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
 };
 var wizardsTypes = [wizardOne, wizardTwo, wizardThree, wizardFour];
 var renderWizard = function () {
   var wizardElement = wizardsTemplate.cloneNode(true);
   wizardElement.querySelector('.setup-similar-label').textContent = wizardsTypes[i].name + '\n' + wizardsTypes[i]. secondname;
   wizardElement.querySelector('.wizard-coat').style.fill = wizardsTypes[i].coatColor;
-  wizardElement.querySelector('.wizard-eyes').style.fill =  wizardsTypes[i].eyesColor;
+  wizardElement.querySelector('.wizard-eyes').style.fill = wizardsTypes[i].eyesColor;
   return wizardElement;
 };
 var wizardsList = document.createDocumentFragment();
