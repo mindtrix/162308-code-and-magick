@@ -16,22 +16,22 @@ var wizardOne = {
   secondname: WIZARD_SEC_NAMES[random(0, WIZARD_SEC_NAMES.length - 1)],
   coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
   eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
-}
+};
 var wizardTwo = {
   name: WIZARD_NAMES[random(0, WIZARD_NAMES.length - 1)],
   secondname: WIZARD_SEC_NAMES[random(0, WIZARD_SEC_NAMES.length - 1)],
   coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
   eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
-}
+};
 var wizardThree = {
   name: WIZARD_NAMES[random(0, WIZARD_NAMES.length - 1)],
   secondname: WIZARD_SEC_NAMES[random(0, WIZARD_SEC_NAMES.length - 1)],
   coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
   eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
-}
+};
 var wizardFour = {
-  name: WIZARD_NAMES[random(0, WIZARD_NAMES.length-1)],
-  secondname: WIZARD_SEC_NAMES[random (0, WIZARD_SEC_NAMES.length - 1)],
+  name: WIZARD_NAMES[random(0, WIZARD_NAMES.length - 1)],
+  secondname: WIZARD_SEC_NAMES[random(0, WIZARD_SEC_NAMES.length - 1)],
   coatColor: COAT_COLORS[random(0, COAT_COLORS.length - 1)],
   eyesColor: EYES_COLORS[random(0, EYES_COLORS.length - 1)],
 };
