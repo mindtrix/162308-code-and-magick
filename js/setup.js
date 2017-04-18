@@ -38,7 +38,7 @@ var wizardFour = {
 var wizardsTypes = [wizardOne, wizardTwo, wizardThree, wizardFour];
 var renderWizard = function () {
   var wizardElement = wizardsTemplate.cloneNode(true);
-  wizardElement.querySelector('.setup-similar-label').textContent = wizardsTypes[i].name + '\n' + wizardsTypes[i]. secondname;
+  wizardElement.querySelector('.setup-similar-label').textContent = wizardsTypes[i].name + '\n' + wizardsTypes[i].secondname;
   wizardElement.querySelector('.wizard-coat').style.fill = wizardsTypes[i].coatColor;
   wizardElement.querySelector('.wizard-eyes').style.fill = wizardsTypes[i].eyesColor;
   return wizardElement;
